@@ -24,8 +24,8 @@ stages:
     - data/processed/test_winequality.csv 
     - src/train_and_evaluate.py
     params:
-    - estimators.ElasticNet.params.alpha
-    - estimators.ElasticNet.params.l1_ratio
+    - estimater.elastic_net.parameters.alpha
+    - estimater.elastic_net.parameters.l1_ratio
     metrics:
     - report/scores.json:
         cache: false

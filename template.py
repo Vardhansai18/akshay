@@ -6,6 +6,12 @@ folders = [
     "saved_models" , 
     "data_given" ,
     "reports" ,
+    "webapp" ,
+    "prediction_service",
+    os.path.join("webapp" , "static" ) ,
+    os.path.join("webapp/static" , "css" ) ,
+    os.path.join("webapp/static" , "script" ) ,
+
     os.path.join("data" , "raw" ) ,
     os.path.join("data" , "processed" ) 
    ]
@@ -14,6 +20,11 @@ files = [
     "dvc.yaml" , 
     "params.yaml" ,
     ".gitignore" ,
+    os.path.join("prediction_service" , "model") ,  
+    os.path.join("prediction_service" , "__init__.py") ,
+    os.path.join("prediction_service" , "prediction.py") ,  
+    os.path.join("webapp/static/css" , "main.css") , 
+    os.path.join("webapp/static/script" , "index.js") , 
     os.path.join("reports" , "params.json") , 
     os.path.join("reports" , "scores.json") , 
     os.path.join("src" , "__init__.py") , 

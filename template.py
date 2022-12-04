@@ -11,7 +11,8 @@ folders = [
     os.path.join("webapp" , "static" ) ,
     os.path.join("webapp/static" , "css" ) ,
     os.path.join("webapp/static" , "script" ) ,
-
+    os.path.join("webapp" , "templates" ) ,
+    
     os.path.join("data" , "raw" ) ,
     os.path.join("data" , "processed" ) 
    ]
@@ -20,6 +21,10 @@ files = [
     "dvc.yaml" , 
     "params.yaml" ,
     ".gitignore" ,
+    os.path.join("webapp/templates" , "index.html" ) ,
+    os.path.join("webapp/templates" , "404.html" ) ,
+    os.path.join("webapp/templates" , "base.html" ) ,
+
     os.path.join("prediction_service" , "model") ,  
     os.path.join("prediction_service" , "__init__.py") ,
     os.path.join("prediction_service" , "prediction.py") ,  

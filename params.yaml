@@ -1,0 +1,24 @@
+vardhan_base :
+  project : ourmajorproject
+  target_col : TARGET
+
+data_source : 
+  s3_source : data_given/winequality.csv
+
+load_data : 
+  raw_data : data/raw/winequality.csv
+
+
+split_data : 
+  train_path : data/processed/train_winequality.csv
+  test_path :  data/processed/test_winequality.csv
+  test_size : 0.2
+
+estimater : 
+  elastic_net : 
+    parameters :
+      alpha : 0.5
+      l1_ratio : 0.2 
+
+model : saved_models
+

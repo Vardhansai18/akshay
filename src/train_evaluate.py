@@ -21,7 +21,7 @@ def eval_metrics(actual, pred):
     r2 = r2_score(actual, pred)
     return rmse, mae, r2
 
-def train_and_evaluate(config_path):
+def train_evaluate(config_path):
     config = read_params(config_path)
     test_data_path = config["split_data"]["test_path"]
     train_data_path = config["split_data"]["train_path"]
@@ -89,4 +89,4 @@ if __name__=="__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
     parsed_args = args.parse_args()
-    train_and_evaluate(config_path=parsed_args.config)
+    train_evaluate(config_path=parsed_args.config)

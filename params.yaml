@@ -22,5 +22,5 @@ estimater :
 
 model : saved_models
 reports:
-  params: report/params.json
-  scores: report/scores.json
+  params: reports/params.json
+  scores: reports/scores.json
